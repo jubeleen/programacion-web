@@ -1,0 +1,30 @@
+/* hoja de estilos */
+
+/* tres selectores */
+
+/* selector por etiqueta */
+
+p{
+    
+}
+
+.contenedor{
+    color:rgb(255, 255, 255); /* modifica el color de texto */
+    background-color: rgb(60, 61, 61); /* modifica el color de fondo */
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 2px solid rgb(0, 0, 0);  
+    border-style: solid;/* ancho,tipo,color*/
+    padding: 20px; /* espacio del elemento hacia los bordes */
+    margin: 175px; /* espacio del elemento desde los bordes hacia afuera */
+    border-radius: 20px;
+    width: 800px;
+    height: 300px;
+    display: flex;
+    gap: 30px;
+}
+
+.contenedor-bordes{
+
+}
