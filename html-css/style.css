@@ -1,30 +1,50 @@
 /* hoja de estilos */
 
-/* tres selectores */
-
 /* selector por etiqueta */
-
-p{
-    
-}
-
-.contenedor{
-    color:rgb(255, 255, 255); /* modifica el color de texto */
-    background-color: rgb(60, 61, 61); /* modifica el color de fondo */
-    font-size: 30px;
+p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* selector por clase */
+  .contenedor {
+    color: white; /* color de texto */
+    background-color: #3c3d3d; /* color de fondo */
+    font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    border: 2px solid rgb(0, 0, 0);  
-    border-style: solid;/* ancho,tipo,color*/
-    padding: 20px; /* espacio del elemento hacia los bordes */
-    margin: 175px; /* espacio del elemento desde los bordes hacia afuera */
+  
+    border: 2px solid black;  
     border-radius: 20px;
+  
+    padding: 20px; /* espacio interno */
+    margin: 50px auto; /* centrado horizontal */
+  
     width: 800px;
-    height: 300px;
+    height: auto;
     display: flex;
     gap: 30px;
-}
-
-.contenedor-bordes{
-
-}
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* otro selector por clase */
+  .contenedor-bordes {
+    border: 3px dashed #888;
+    padding: 15px;
+    background-color: #f8f8f8;
+    color: #222;
+    font-style: italic;
+  }
+  
+  /* selector por ID */
+  #elemento-unico {
+    background-color: navy;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+  }
+  
