@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Productos</title>
+</head>
+<body>
+  <h1>Lista de productos</h1>
+
+  <div id="productos"></div>
+
+  <script>
+    const productos = [
+      { nombre: "Notebook", precio: 800 },
+      { nombre: "Celular", precio: 500 },
+      { nombre: "Teclado", precio: 50 },
+    ];
+
+    
+    const productosCaros = productos.filter(producto => producto.precio > 100);
+    console.log("Productos mayores a 100:", productosCaros);
+
+    
+    const nombresMinusculas = productos.map(producto => producto.nombre.toLowerCase());
+    console.log("Nombres en minúscula:", nombresMinusculas);
+
+   
+    const contenedor = document.getElementById("productos");
+    const lista = document.createElement("ul");
+
+    productos.forEach(producto => {
+      const item = document.createElement("li");
+      item.textContent = `${producto.nombre} - $${producto.precio}`;
+      lista.appendChild(item);
+    });
+
+    contenedor.appendChild(lista);
+  </script>
+</body>
+</html>
