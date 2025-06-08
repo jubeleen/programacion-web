@@ -18,10 +18,10 @@ productos.forEach(producto =>{
 
 //2
 
-function obtenerPrecioPromedio (array){
-    let total=[];
-    array.forEach(producto => total += producto.precio);
-    return total/array.lenght;
+function obtenerPrecioPromedio(array) {
+  let total = 0;
+  array.forEach(producto => total += producto.precio);
+  return total / array.length;
 }
 console.log("precio.promedio", obtenerPrecioPromedio (productos) )
 
@@ -46,3 +46,11 @@ const productosEnMinuscula = productos.map(p => p.nombre.toLowerCase() );
 const contenedor = document.getElementById("productos");
 
 const ul = document.createElement("ul")
+
+productos.forEach(producto => {
+  const li = document.createElement("li");
+  li.textContent = `${producto.nombre} - $${producto.precio}`;
+  ul.appendChild(li);
+});
+
+contenedor.appendChild(ul);
